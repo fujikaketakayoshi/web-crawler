@@ -47,9 +47,9 @@ function getYmdHis() {
     
     
     const postUrls = await page.evaluate(() => {
-        const title = document.title;
+        const title = document.title ?? '';
         const desc = document.querySelector('meta[name="description"]').content ?? '';
-        const links = document.querySelectorAll('a');
+        const links = document.querySelectorAll('a') ?? [];
         let urls = [];
         for( let link of links ) {
             let href = link.getAttribute('href');
