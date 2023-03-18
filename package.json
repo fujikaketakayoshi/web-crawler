@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nedb": "^1.8.0",
+    "puppeteer": "^19.7.5"
+  }
+}
